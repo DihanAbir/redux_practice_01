@@ -12,12 +12,12 @@ const createActions = dispatch => (
         increment : value => dispatch({type: INCREMENT, payload: value || 1}),
         decrement : value => dispatch({type: DECCREMENT, payload: value || 1}),
         reset : () => dispatch({type: RESET})
-
     }
 )
 
 const reducer = (state, action) =>{
     switch (action.type) {
+
         case INCREMENT:
             {
                 return state + action.payload
